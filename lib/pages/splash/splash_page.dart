@@ -16,11 +16,11 @@ class _SplashPageState extends State<SplashPage> {
   @override
   void initState() {
     super.initState();
-    Future.delayed(const Duration(milliseconds: 1200), () => launchHome());
+    Future.delayed(const Duration(milliseconds: 2000), () => launchHome());
   }
 
   Future<void> launchHome() async {
-    Get.offAllNamed(RouteManager.bottomNavigation);
+    Get.offAllNamed(RouteManager.onboarding);
   }
 
   @override

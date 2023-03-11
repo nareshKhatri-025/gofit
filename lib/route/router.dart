@@ -6,11 +6,14 @@ import 'package:get/get.dart';
 class RouteManager {
   static const String splashRoute = 'SplashPage';
   static const String bottomNavigation = 'bottomNavigation';
+  static const String onboarding = 'onboarding';
 
   static MaterialPageRoute generateRoute(RouteSettings settings) {
     switch (settings.name) {
       case splashRoute:
         return MaterialPageRoute(builder: (_) => SplashPage());
+      case onboarding:
+        return MaterialPageRoute(builder: (_) => OnBoardingPage());
       case bottomNavigation:
         return MaterialPageRoute(builder: (_) => BottomNavigationWidget());
 
